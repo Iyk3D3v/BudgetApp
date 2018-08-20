@@ -1,0 +1,133 @@
+﻿@model BudgetApp.Models.UserViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "Create";
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Register</title>
+    <meta content="Admin Dashboard" name="description" />
+    <meta content="ThemeDesign" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="~/Content/vertical/assets/images/favicon.ico">
+    
+    <link href="~/Content/vertical/assets/css/bootstrap.min.css" rel="stylesheet" />
+   
+    <link href="~/Content/vertical/assets/css/icons.css" rel="stylesheet" />
+   
+    <link href="~/Content/vertical/assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+    <!-- Begin page -->
+    <div class="accountbg"></div>
+    <div class="wrapper-page">
+
+        <div class="card">
+            <div class="card-body">
+
+                @*<h3 class="text-center mt-0 m-b-15">
+                    <a href="index.html" class="logo logo-admin"><img src="assets/images/logo.png" height="30" alt="logo"></a>
+                </h3>*@
+
+                <h4 class="text-muted text-center font-18"><b>Create An Account</b></h4>
+
+                <div class="p-3">
+                   @using (@Html.BeginForm("Create", "User", FormMethod.Post, new { @class = "form-horizontal m-t-20" }))
+                   {
+                    <div class="form-group row">
+                        <div class="col-12">    
+                            @Html.EditorFor(m =>m.email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email",required="true" } })
+                            @*<input class="form-control" type="email" required="" placeholder="Email">*@
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-12">
+                            @Html.EditorFor(m =>m.firstName, new { htmlAttributes = new { @class = "form-control", placeholder ="FirstName", required = "true"}})
+                            @*<input class="form-control" type="text" required="" placeholder="FirstName">*@
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-12">
+                            @Html.EditorFor(m => m.lastName, new { htmlAttributes = new { @class = "form-control", placeholder = "LastName", required = "true" } })
+                            @*<input class="form-control" type="text" required="" placeholder="LastName">*@
+                        </div>
+                    </div>
+                    
+                  <div class="form-group row">
+                        <div class="col-12">@Html.EditorFor(m => m.password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password", required = "true" } })
+                            @*<input class="form-control" type="password" required="" placeholder="Password">*@
+                        </div>
+                      @*@Html.ValidationMessageFor(m => m.password)*@
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-12">
+                            @Html.EditorFor(m => m.confirmPassword, new { htmlAttributes = new { @class = "form-control", placeholder = "ConfirmPassword", required = "true" } })
+                            @*<input class="form-control" type="password" required="" placeholder="Password">*@
+                            @Html.ValidationMessageFor(m=>m.confirmPassword)
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label font-weight-normal" for="customCheck1">I accept <a href="#" class="text-muted">Terms and Conditions</a></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group text-center row m-t-20">
+                        <div class="col-12">
+                            <button class="btn btn-info btn-block waves-effect waves-light" type="submit">Register</button>
+                        </div>
+                    </div>
+
+                    <div class="form-group m-t-10 mb-0 row">
+                        <div class="col-12 m-t-20 text-center">
+                            <a href="@Url.Action("Login","User")" class="text-muted">Already have account?</a>
+                        </div>
+                    </div>
+                   }
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery  -->
+    
+    <script src="~/Content/vertical/assets/js/jquery.min.js"></script>
+    <script src="~/Content/vertical/assets/js/popper.min.js"></script>
+    <script src="~/Content/vertical/assets/js/bootstrap.min.js"></script>
+    <script src="~/Content/vertical/assets/js/modernizr.min.js"></script>
+    <script src="~/Content/vertical/assets/js/detect.js"></script>
+    <script src="~/Content/vertical/assets/js/fastclick.js"></script>
+    <script src="~/Content/vertical/assets/js/jquery.slimscroll.js"></script>
+    <script src="~/Content/vertical/assets/js/jquery.blockUI.js"></script>
+    <script src="~/Content/vertical/assets/js/waves.js"></script>
+    <script src="~/Content/vertical/assets/js/jquery.nicescroll.js"></script>
+    <script src="~/Content/vertical/assets/js/jquery.scrollTo.min.js"></script>
+
+    <!-- App js -->
+    <script src="~/Content/vertical/assets/js/app.js"></script>
+
+</body>
+</html>
