@@ -22,7 +22,7 @@ namespace BudgetApp.Domain.Managers
             _budgetRepo.CreateBudget(b);
         }
 
-        public BudgetModel GetBudget(int id)
+        public BudgetModel  GetBudget(int id)
         {
            var budget = _budgetRepo.GetBudgetForUser(id);
             return budget;

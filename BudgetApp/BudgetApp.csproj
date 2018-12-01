@@ -621,7 +621,6 @@
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Dashboard.cshtml" />
     <Content Include="Views\User\CreateBudget.cshtml" />
-    <Content Include="Views\BudgetN\CreateBudget.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -631,6 +630,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="scripts\BudgetN\" />
+    <Folder Include="Views\BudgetN\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BudgetApp.Domain\BudgetApp.Domain.csproj">

@@ -99,14 +99,8 @@ namespace BudgetApp.Controllers
             return View(u);
         }
 
-        [Authorize]
-        public ActionResult CreateBudget()
-        {
-            //have to find a way to make redirect to dash board
-            return View();
-        }
 
-        [Authorize]
+    [Authorize]
         public ActionResult Dashboard()
         {
             return View();

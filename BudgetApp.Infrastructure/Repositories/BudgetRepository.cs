@@ -33,15 +33,20 @@ namespace BudgetApp.Infrastructure.Repositories
             //throw new NotImplementedException();
             using (var context = new DataEntities())
             {
+                var query1 = context.Budgets.Select(b => b.UserId == id);
                 var query = from b in context.Budgets
                             where b.UserId == id
-                            select new BudgetModel
-                            {
-                                salary = b.salary,
-                                saving = b.saving
-                            };
-                var result = query as BudgetModel;
-                return result;  
+                            select b;
+                            //select new BudgetModel
+                            //{
+                            //    salary = b.salary,
+                            //    saving = b.saving,
+                            //    expenditure = b.expenditure,
+                            //    BudgetId = b.BudgetId
+                            //};
+                var result = query1 as BudgetModel;
+                var result1 = query as BudgetModel;
+                return result1;  
             }
         }
 

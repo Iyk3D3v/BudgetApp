@@ -42,13 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IBudgetRepository.cs" />
+    <Compile Include="Interfaces\ILogRepository.cs" />
     <Compile Include="Interfaces\ISpendingRepository.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
     <Compile Include="Interfaces\Services\IEncryption.cs" />
     <Compile Include="Managers\BudgetManager.cs" />
+    <Compile Include="Managers\LogManager.cs" />
     <Compile Include="Managers\SpendingManager.cs" />
     <Compile Include="Managers\UserManager.cs" />
     <Compile Include="Models\BudgetModel.cs" />
+    <Compile Include="Models\LogModel.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\SpendingModel.cs" />
     <Compile Include="Models\UserModel.cs" />

@@ -15,6 +15,6 @@ namespace BudgetApp.Infrastructure.Data
 
         public DbSet<Spending> Spendings { get; set; }
 
-
+        public DbSet<Log> Logs { get; set; }
     }
 }

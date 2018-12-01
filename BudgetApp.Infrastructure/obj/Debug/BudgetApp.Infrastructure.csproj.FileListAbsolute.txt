@@ -17,3 +17,4 @@ C:\Users\Ikechukwu\documents\visual studio 2015\Projects\BudgetApp\BudgetApp.Inf
 C:\Users\Ikechukwu\documents\visual studio 2015\Projects\BudgetApp\BudgetApp.Infrastructure\obj\Debug\BudgetApp.Infrastructure.csproj.GenerateResource.Cache
 C:\Users\Ikechukwu\documents\visual studio 2015\Projects\BudgetApp\BudgetApp.Infrastructure\obj\Debug\BudgetApp.Infrastructure.dll
 C:\Users\Ikechukwu\documents\visual studio 2015\Projects\BudgetApp\BudgetApp.Infrastructure\obj\Debug\BudgetApp.Infrastructure.pdb
+C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\BudgetApp\BudgetApp.Infrastructure\obj\Debug\BudgetApp.Infrastructure.Migrations.AddedLogs.resources
